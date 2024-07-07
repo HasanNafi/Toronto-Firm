@@ -1,0 +1,114 @@
+/* CSS FOR THE CART */
+
+/* Modify all images in the List in the cart to have a small size (display) as small */
+.products {
+    width: 100%;
+    margin: 20px 20px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+.products ul {
+    /* background-color: aqua; */
+    transition: 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.products>ul>li>img {
+    width: 200px;
+    height: 200px;
+    /* padding: 7px; */
+
+    /* float: center; */
+}
+
+.products>ul>li {
+    background-color: rgba(222, 245, 191, 0.808);
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px var(--mantisGreen);
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    border-right: 20px;
+
+}
+
+li {
+    list-style-type: none;
+    border-right: 20px;
+    border-radius: 4%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ======================= */
+#fullCart {
+    margin-top: 45%;
+    display: block !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    /*  */
+    /* background-color: antiquewhite; */
+    padding: 20px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+
+#delivery label {
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+}
+
+#delivery input:focus {
+    border: none;
+    box-shadow: 0 0 3px var(--mantisGreen);
+}
+
+.costs>h6 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: None;
+}

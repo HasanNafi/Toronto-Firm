@@ -1,0 +1,254 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto's Farm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template_styles.css">
+    <style>
+        #products_container {
+            margin: 10px 5%;
+            padding: 5px 10px;
+            background-color: rgba(219, 214, 214, 0.3);
+            border-radius: 5px;
+        }
+
+        .flex_center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #page_title h1 {
+            color: var(--mantisGreen);
+            text-align: center;
+        }
+
+        #underline {
+            margin-top: -10px;
+            height: 5px;
+            background-color: var(--mantisGreen);
+            animation: widthGrow 0.3s linear 0.2s 1 forwards;
+        }
+
+        @keyframes widthGrow {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        #products_list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .product {
+            width: 20%;
+            background-color: rgba(163, 163, 163, 0.5);
+            border-radius: 10px;
+            margin: 20px 20px;
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .product {
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .product {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            .product {
+                width: 80%;
+            }
+        }
+
+        .product:hover {
+            box-shadow: 2px 2px 10px var(--mantisGreen);
+        }
+
+        .product:hover img {
+            transform: scale(1.00);
+
+        }
+
+        .product img {
+            transform: scale(1.08);
+            width: 100%;
+            height: 300px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: 0.3s;
+            object-fit: cover;
+        }
+
+        .product_name {
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .product_price {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .product_info {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<!-- START OF HTML BODY -->
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="LOGO-round.png" alt="Logo">
+
+        <ul class="header-list">
+            <li> <a href="index.html">Home</a></li>
+        <li> <a href=about.html>About</a></li>
+        <li> <a href=products.html>Products</a></li>
+        <li> <a href=Shop.html>Shop</a></li>
+        <li> <a href=signin.html>Login</a></li>
+        </ul>
+    </div>
+
+    <!-- CODE FOR THE REST OF THE PAGES -->
+    <div id="products_container">
+        <div class="flex_center" id="page_title">
+            <div class="flex_center">
+                <h1>PRODUCTS</h1>
+                <div id="underline"></div>
+            </div>
+        </div>
+
+        <div id="products_list">
+            <div class="product">
+                <img src="images/broccoli.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Broccoli</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/acorn-squash.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Acorn Squash</p>
+                    <p class="product_price">$ 2.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/cabbage.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Cabbage</p>
+                    <p class="product_price">$ 1.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/carrot.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Carrot</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/cauliflower.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Cauliflower</p>
+                    <p class="product_price">$ 4.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/corn.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Corn</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/garlic.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Garlic</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/lettuce.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Lettuce</p>
+                    <p class="product_price">$ 2.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/onion.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Onion</p>
+                    <p class="product_price">$ 1.49 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/potato.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Potato</p>
+                    <p class="product_price">$ 1.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/pumpkin.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Pumpkin</p>
+                    <p class="product_price">$ 2.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/eggplant.jpg" alt="product_image">
+                <div class="product_info">
+                    <p class="product_name">Eggplant</p>
+                    <p class="product_price">$ 1.99 / lb</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="contact_us_footer"><a href="contact.html">Contact Us</a></div>
+        <div id="copyright_footer">&copy; Group E - Lambton College</div>
+    </footer>
+
+</html>

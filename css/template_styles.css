@@ -1,0 +1,141 @@
+/* Declaration of constants */
+:root
+{
+  --mantisGreen: #264d19;
+  --russianGreen: #648767;
+  --silver: #BFC0C0;
+  --lightCyan: #CEE7E6;
+  
+}
+
+
+
+/* Menu Icon */
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* ================================================== */
+
+/* ********* 
+**********
+******
+****
+**
+CSS FOR HOME PAGE 
+*
+***
+****
+*******
+********* */
+.upper-home img
+{
+  width: 100%;
+  height: 45%;
+  opacity: .35;
+  position: relative;
+  filter: blur(11px);
+}
+
+.center-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  
+  font-size: 3.2em;
+  color: var(--russianGreen);
+}
+@media (max-height:800px){
+  .center-text {
+  
+    font-size: 2.8em;
+    
+  }
+} 
+
+.column img
+{
+  width:20%;
+  opacity: .2;
+  border-radius: 10px;
+  margin-top: 10px;
+  filter: brightness(65%);
+}
+.column img:hover
+{
+  filter: brightness(30%);
+  
+} 
+.row
+{
+  display: flex;
+  position: relative;
+}
+.row a
+{
+  text-decoration: none;
+  color: var(--russianGreen);
+}
+.column
+{
+  flex: 40%;
+  padding: 12px;
+  position: relative;
+  
+}
+.center-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  
+  font-size: 2em;
+  color: var(--russianGreen);
+}
+
+.low-home
+{
+  background-color: var(--mantisGreen);
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 10px 15px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+ 
+  font-size: small;
+  position: relative;
+  text-align: center;
+  color: whitesmoke;
+  
+}
+
+.home-page
+{
+  position: relative;
+}

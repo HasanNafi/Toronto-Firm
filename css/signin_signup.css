@@ -1,0 +1,176 @@
+
+.submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  color: white;
+  background-color: #46853a;
+  border-radius: 5px;
+  margin-left: 0 !important;
+  border: none;
+}
+
+
+.submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+  background-color: #51cd89;
+  color: black;
+}
+
+
+
+
+/* =======================================sign up page css========================================= */
+/* .home_button{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+* {
+  margin: 0
+}
+.home_button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 10vh;
+
+}
+.home_button a{
+  color: black;
+  font-weight: 900;
+  font-size: 2rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.home_button a:hover{
+  color: blue;
+  
+} */
+#underline {
+  margin-top: -10px;
+  height: 5px;
+  background-color: var(--mantisGreen);
+  animation: widthGrow 0.3s linear 0.2s 1 forwards;
+  margin-bottom: 5%;
+}
+
+@keyframes widthGrow {
+  0% {
+      width: 0%;
+  }
+
+  100% {
+      width: 100%;
+  }
+}
+
+.registration {
+  /* position: relative; */
+  margin-top: 6rem;
+  margin-bottom: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+  /* background-color: rgb(18, 19, 20); */
+  transition: all;
+
+}
+
+.registration .card{
+  /* border: 1px solid black; */
+  margin: 10px;
+  display: flex;
+  /* min-height: 80%; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: rgb(226, 243, 224);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(103, 101, 101, 0.69), 0 6px 20px 0 rgba(157, 114, 114, 0.69);
+  position: absolute;
+}
+.registration .card p{
+  color: black !important;
+}
+.registration .card a{
+  color: rgb(99, 99, 247) !important;
+}
+.registration h1 {
+  color: #46853a ;
+  font-family: sans-serif !important;
+  margin: 20px !important;
+  text-align: center !important;
+  font-weight: bold;
+  
+}
+
+.red {
+color: rgb(234, 43, 43);
+}
+.form-control label{
+  float: left ;
+  width: 11em ;
+  text-align: right ;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: black !important;
+  font-weight: 500;
+}
+.form-control input,
+.form-control textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 5px ;
+  font-family: sans-serif ;
+  border-radius: 5px ; 
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  box-shadow: 3px 3px 10px rgb(252, 251, 251), -3px -3px 10px rgb(248, 245, 245);
+  outline: 0;
+}
+.form-control.success input{
+  border-color: #0d8f48;
+}
+.form-control.error input{
+  border-color: rgb(196, 46, 46);
+}
+
+.form-control .error{
+  color: red;
+  font-size: 9px;
+  height: 13px;
+}
+
+.term_condition{
+  margin: 10px;
+}
+.term_condition label{
+  color: red !important;
+}
+
+#registration_form .submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  color: white;
+  background-color: #46853a;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+  margin-top: 20px;
+}
+
+
+#registration_form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+  background-color: #51cd89;
+  color: black;
+}
+/* //=================================================== */
+

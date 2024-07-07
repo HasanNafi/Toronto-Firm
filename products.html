@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Toronto's Firm - Group-E (Lambton College)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!-- <link rel="stylesheet" href="css/template_styles.css"> -->
+
+    <style>
+        .modal-body > img {
+            height: auto;
+            max-width: 180px ;
+        }
+        .noShow{
+            display: none;
+        }
+        #product_purchase
+        {
+            display: inline;
+        }
+        .product_price
+        {
+            display: none;
+        }
+        
+    </style>
+
+    <!--JQuery link-->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
+</head>
+
+<body class="goto-here">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <div id="image">
+                <img src="./images/LOGO-round.png" alt="Toronto's Firm">
+              </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="products.html">Product</a>
+                            <a class="dropdown-item" href="cart.html">Cart</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="signin.html" class="nav-link">Login</a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+   
+    <!-- section-1 end  -->
+    <!-- section-2 start  -->
+    <!-- CODE FOR THE REST OF THE PAGES -->
+    <div id="products_container">
+        <div class="flex_center" id="page_title">
+            <div class="flex_center">
+                <h1>PRODUCTS</h1>
+                <div id="underline"></div>
+            </div>
+        </div>
+
+        <div id="products_list">
+            
+           
+
+            <div class="product">
+                <img src="images/broccoli.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Broccoli</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                </button> -->
+
+            <div class="product">
+                <img src="images/acorn-squash.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Acorn Squash</p>
+                    <p class="product_price">$ 2.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/cabbage.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Cabbage</p>
+                    <p class="product_price">$ 1.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/carrot.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Carrot</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/cauliflower.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Cauliflower</p>
+                    <p class="product_price">$ 4.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/corn.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Corn</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/garlic.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Garlic</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/lettuce.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Lettuce</p>
+                    <p class="product_price">$ 2.99 / lb</p>
+                </div>
+            </div>
+
+            <!-- 
+                -- FRUITS --
+             -->
+            
+
+            <div class="product">
+                <img src="images/strawberry.jpg" alt="product_image"data-toggle="modal" data-target="#exampleModal"  onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Strawberry</p>
+                    <p class="product_price">$ 1.59 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/orange.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Orange</p>
+                    <p class="product_price">$ 2.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/banana.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Banana</p>
+                    <p class="product_price">$ 0.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/kiwi.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Kiwi</p>
+                    <p class="product_price">$ 5.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/cantaloupe.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Cantaloupe</p>
+                    <p class="product_price">$ 3.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/lemon.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Lemon</p>
+                    <p class="product_price">$ 1.99 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/apple.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Apple</p>
+                    <p class="product_price">$ 1.59 / lb</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/grape.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Grape</p>
+                    <p class="product_price">$ 3.59 / lb</p>
+                </div>
+            </div>
+
+            
+            <!-- JUICES -->
+            <div class="product">
+                <img src="images/orange-juice.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Orange Juice</p>
+                    <p class="product_price">$ 1.99</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/green-tea.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Green tea</p>
+                    <p class="product_price">$ 1.59</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/coconout-water.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Coconout Water</p>
+                    <p class="product_price">$ 3.49</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/kombucha.jpg" alt="product_image" data-toggle="modal" data-target="#exampleModal" onclick="populate_modal(this)">
+                <div class="product_info">
+                    <p class="product_name">Kombucha</p>
+                    <p class="product_price">$ 4.99</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- section-2 end  -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            </div>
+            <div class="modal-body">
+                <img id="modal_image" src="images/eggplant.jpg" alt="product_image">
+                <div id="product_image">
+                    <img>  <!--the image is defined based on the product selected on product webpage-->
+                </div>
+                
+                <div id="product_detail">
+                    <h2 id="product_name"></h2>
+                    
+                    <p>Category: <span id="product_category"></span></p>
+                    <p>Size: <span id="product_size"></span></p>
+                    <p>Price: <span id="product_price"></span></p>
+                    
+                    <p>Description: <span id="product_description"></span></p>
+                    
+                </div>
+                
+                <div id="product_stock">	
+                    <p>Stock available: <span id="stock"></span></p>
+                </div>
+        
+                <div id="product_purchase">			
+                    <button type="button" class="btn btn-primary" id="removeUnit">-</button>
+                    <p style="display: inline" id="quantity">0</p>
+                    <button type="button" class="btn btn-primary" id="addUnit">+</button>
+                    <input type="text" id="total_unit_price" disabled>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="addCart">Add to Cart</button>
+                <button type="button" class="btn btn-primary" id="removeCart">Remove from Cart</button>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <!-- footer  -->
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="mouse">
+                    <a href="#" class="mouse-icon">
+                        <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Toronto Firm's</h2>
+                        <p>We are here for giving you best fresh green vegetables,fruits comes from farmers directly.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate icon-css"><a href="https://www.twitter.com/"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate icon-css"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate icon-css"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Menu</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                            <li><a href="about.html" class="py-2 d-block">About</a></li>
+                            <li><a href="products.html" class="py-2 d-block">Products</a></li>
+                            <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">265 Yorkland Blvd Suite 400, Toronto ON M2J 1S5</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 647 225 2255</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">abc@email.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://www.cestarcollege.com" target="_blank"> Group-E</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- SCRIPT TO POPULATE MODAL WITH THE INFORMATION OF THE PRODUCT SELECTED -->
+    <script>
+
+        // Creating global variable with the product name to be used in all other functions
+        var productName;
+        const populate_modal = function(event)
+        {
+            // GET MODAL
+            theModal = document.getElementById('exampleModalLabel');
+            var fullPath = event.src;
+            var pictureName = fullPath.replace(/^.*[\\\/]/, '');
+            console.log(pictureName);
+
+            //Product Name (removing jpg)
+            productName = pictureName.replace('.jpg','');
+
+            document.getElementById('exampleModalLabel').innerHTML = productName.toUpperCase();
+            document.getElementById('modal_image').src = fullPath;
+
+            // Calling the functions created by prisicla (this function works as the Start priscila had)
+            getProductDetails(productName);   //call javascript function to get the product Details 
+		    getLocalStorage(productName);   //check if the product has already added to the chart and get datas
+        }
+
+
+        //PRISCILA CODE
+        // My addition to priscila code
+        // Creating the start function to obtain the name of the product that prisicila used ot obtain by typing the product
+        
+
+    var getProductDetails = function(p_product){
+		console.log("getProductDetails function");
+		console.log(p_product);
+		var category;
+		var size;
+		var price;
+		var description;
+		var initial_stock;
+        
+		if(p_product == 'broccoli'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 2.50;
+			description = "The flowering head of broccoli can be served with any meal. It tastes great steamed, boiled, baked and is a fresh and healthy side dish. Families have enjoyed a fresh plate of broccoli with their meals for generations.";
+			initial_stock = 35;
+		}else if(p_product == 'acorn-squash'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 3.65;
+			description = "Pepper squash or acorn squash is most commonly baked, but can also be microwaved, sautéed or steamed. For savory recipes, it may be stuffed with rice, meat or vegetable mixtures.";
+			initial_stock = 15;
+		}else if(p_product == 'cabbage'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 6.00;
+			description = "Sliced thinly, green cabbage can be eaten raw or it can go into stir-fries, soups, and braises. The whole leaves can also be used to make cabbage rolls. Raw leaves are somewhat peppery in flavor, but the cabbage gets sweeter as it cooks.";
+			initial_stock = 40;
+		}else if(p_product == 'carrot'){
+			category = 'Vegetables';
+			size = "1 lb";
+			price = 3.20;
+			description = "Carrots are integral in adding colour and sweet flavour to soups, stews, salads and stir fries";
+			initial_stock = 50;
+		}else if(p_product == 'cauliflower'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 4.00;
+			description = "Steamed, boiled, sautéed or raw, cauliflower is a great addition to any dish. The distinct white florets allow it to stand out amongst its colourful vegetable companions. Cauliflower can be found all year long, and is a favourite to eat raw with a dip, or mixed together with other vegetables as a steamed dish. It is also a popular substitute for potatoes and rice.";
+			initial_stock = 20;
+		}else if(p_product == 'corn'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 0.30;
+			description = "Sweet Corn is a great side for any meal, excellent boiled or grilled and served warm with salt and butter.";
+			initial_stock = 65;
+		}else if(p_product == 'garlic'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 1.64;
+			description = "Garlic is the small, white, round bulb of a plant that is related to the onion plant. Garlic has a very strong smell and taste and is used in cooking.";
+			initial_stock = 40;
+		}else if(p_product == 'lettuce'){
+			category = 'Vegetables';
+			size = "1 unit";
+			price = 2.50;
+			description = "Fresh and crisp, iceberg lettuce is ideal for salads and sandwiches.";
+			initial_stock = 50;
+		}else if(p_product == 'strawberry'){
+			category = 'Fruits';
+			size = "1 box";
+			price = 4.00;
+			description = "Sweet & succulent. Blitz with low fat yogurt and oats for a super smoothie.";
+			initial_stock = 12;
+		}else if(p_product == 'orange'){
+			category = 'Fruits';
+			size = "1 unit";
+			price = 1.15;
+			description = "Sweet, juicy and seedless.";
+			initial_stock = 60;		
+		}else if(p_product == 'banana'){
+			category = 'Fruits';
+			size = "1 unit";
+			price = 0.30;
+			description = "Soft, sweet and delicious, the banana is a popular choice for breakfast, snacks or any time of the day. The vibrant yellow peel provides natural protection while storing, and is a great indicator of when the fruit is ready to eat!";
+			initial_stock = 80;		
+		}else if(p_product == 'kiwi'){
+			category = 'Fruits';
+			size = "1 unit";
+			price = 0.90;
+			description = "This sweet Kiwi fruit makes a great snack. With a distinct tropical flavour it pairs well in your salad and desserts.";
+			initial_stock = 40;			
+		}else if(p_product == 'cantaloupe'){
+			category = 'Fruits';
+			size = "1 unit";
+			price = 3.47;
+			description = "Satisfy your sweet tooth with a slice of Cantaloupe. This refreshing fruit is a perfect treat on it's own, or served with ice cream. Cantaloupe pieces wrapped in prosciutto are also a familiar antipasto dish that is sure to delight.";
+			initial_stock = 30;			
+		}else if(p_product == 'lemon'){
+			category = 'Fruits';
+			size = "1 unit";
+			price = 0.68;
+			description = "Lemons are Ideal for cooking, zesting and drinks.";
+			initial_stock = 45;		
+		}else if(p_product == 'apple'){
+			category = 'Fruits';
+			size = "1 unit";
+			price = 0.99;
+			description = "The mild yet sweet flavour of the Gala apple has made it a family favourite for snacks, salads and sauces. The vibrant red mixes in with subtle hints of green to give the apple its unmistakable look.";
+			initial_stock = 12;		
+		}else if(p_product == 'grape'){
+			category = 'Fruits';
+			size = "1 bag";
+			price = 6.55;
+			description = "The green seedless grape is a favoured snack time choice for adults and children. With a quick rinse of water, they are ready to go. With no prep work required, they are a great snack to pack for a trip to school or road trip adventure.";
+			initial_stock = 10;													
+		}else if(p_product == 'orange-juice'){
+			category = 'Beverages';
+			size = "2.5L";
+			price = 2.99;
+			description = "Orange juice from concentrate. No pulp, no sugar added, 60% daily value of the recommended Vitamin C";
+			initial_stock = 10;													
+		}else if(p_product == 'green-tea'){
+			category = 'Beverages';
+			size = "1L";
+			price = 3.10;
+			description = "Tea made from unfermented leaves that is pale in color and slightly bitter in flavor, produced mainly in China and Japan.";
+			initial_stock = 3;		
+		}else if(p_product == 'coconout-water'){
+			category = 'Beverages';
+			size = "500ml";
+			price = 5.99;
+			description = "Clear liquid within a young, fresh coconut";
+			initial_stock = 5;		
+		}else if(p_product == 'kombucha'){
+			category = 'Beverages';
+			size = "500ml";
+			price = 3.99;
+			description = "Filled with living cultures, organic acids and antioxidants, Low in sugar, Certified organic, Vegan and gluten free";
+			initial_stock = 7;				
+		}else{
+			category = 'No category';
+			size = "-";
+			price = 0;
+			description = "No descrition. Product not identified.";
+			initial_stock = 0;
+		}
+        //set the initial product details on the webpage
+		$("#product_category").text(category);
+		$("#product_size").text(size);
+		$("#product_price").text(price);
+		$("#product_description").text(description);	
+		$('#stock').text(initial_stock);
+		$("#quantity").text(0);
+		$('#total_unit_price').val(0);
+	}
+	/*Holiiii*/
+
+	/*Function responsible calculate the total price for the product*/
+	function calculateTotalUnit(){
+		var quantity = parseInt($("#quantity").text());      //get the quantity selected by user
+		var price = parseFloat($("#product_price").text());  //get the unit price for the product
+		var total = quantity * price;
+		total = total.toLocaleString('en-CA', { style: 'currency', currency: 'CAD' });
+		$('#total_unit_price').val(total);   //display the total price for the product in the page
+	}
+
+	/*Function responsible to update product detail information if the product has already added in the cart*/
+	function getLocalStorage(p_product){
+		console.log("getLocalStorage function");
+		if(window.localStorage)
+          {
+            console.log('localStorage supported!!!')
+
+            //get the product on the local Storage
+			let v_prd_read_local = localStorage.getItem(p_product);
+			//if the product is in the localStorage, update product detail information
+			if(v_prd_read_local){
+            	let myJson = JSON.parse(v_prd_read_local);
+				$("#quantity").text(myJson.quantity);   //get the previous quantity selected by the user for this specific product
+				calculateTotalUnit();  //update the totalUnit
+				var stock_available = parseInt($('#stock').text());
+				stock_available -= myJson.quantity;			
+				$('#stock').text(stock_available); //Update the stock available
+				$('#removeCart').removeClass('noShow');    //change removeCart class to show the button
+				$("#addCart").text("Update Cart");         //change the text from the original button "Add to cart"
+			}else{
+				//if the product is not in the localStorage, change removeCart class to hide the button
+				$('#removeCart').addClass('noShow');
+				$("#addCart").text("Add to cart"); 
+			}
+          }
+          else
+          {
+             console.log("localStorage Not supported")
+          }
+	}
+
+
+
+	$(document).ready(function() { 	
+	  /*This Function must be executed when open the detail webpage and must receive the product selected by the user on product webpage*/
+	  //REMOVE THE START ID AND CLICK EVENT. IT IS ONLY TO TEST THE PRODUCT DETAIL WEBPAGE
+	  /*$("#start").click(function(){
+		var product = $("#product").val();           //get the product selected on the Product webpage
+
+		$("#product_name").text(product);            //set the product name on the product detail webpage
+		var image_scr = "images/" + product + ".jpg";      
+		$("#product_image img").attr("src", image_scr);     //set the image src based on the product name
+		
+		getProductDetails(product);   //call javascript function to get the product Details 
+		getLocalStorage(product);   //check if the product has already added to the chart and get datas
+	  });*/
+
+	  /*Function responsible to add an unit of the product in the "pre-cart"*/
+	  $("#addUnit").click(function(){
+		var quantity = parseInt($("#quantity").text());
+		var stock_available = parseInt($('#stock').text());
+		quantity += 1;
+		stock_available -= 1;
+		//if the stock is 0 I can not add more units
+		if(stock_available < 0){
+			alert("You can not add products. There is no more units in stock.")
+		}else{
+			//if the stock is not 0, add a quantity and subtract the stock
+			$('#quantity').text(quantity);
+			$('#stock').text(stock_available);
+			calculateTotalUnit();   //call the function to update the total unit price
+		}
+	  } );
+	
+	  /*Function responsible to remove an unit of the product in the "pre-cart"*/
+	  $("#removeUnit").click(function(){
+		var quantity = parseInt($("#quantity").text());
+		var stock_available = parseInt($('#stock').text());
+		quantity -= 1;
+		stock_available += 1;
+		//if the quantity is 0 I can not remove more units
+		if(quantity < 0){
+			alert("You can not remove products. The quantity is 0.")
+		}else{
+			//if the quantity is not 0, subtract a quantity and add the stock
+			$('#quantity').text(quantity);
+			$('#stock').text(stock_available);
+			calculateTotalUnit()
+		}
+	  } );
+
+	  /*Function responsible to add the product and quantity in the cart"*/
+	  $("#addCart").click(function(){
+        //var v_product = $("#product_name").text();
+        var v_product = productName;
+        var v_quantity = $("#quantity").text();
+		var v_price = $("#product_price").text();
+
+        v_quantity = parseFloat(v_quantity);
+        v_price = parseFloat(v_price);
+
+		console.log('AddCart function');
+		//quantity must be more than 0 to add to cart
+		if(v_quantity <= 0){
+			alert("Please inform how many units you would like to purchase")
+		}
+		else{
+		  //using localStorage - check if the brower is compatible
+		  if(window.localStorage)
+          {
+            console.log('localStorage supported!!!')
+			//create an object with the quantity and the price of the products. This data will be used on the cart webpage
+            var obj = { 'quantity': v_quantity, 'price': v_price};
+			//add or update the product in the localStorage using JSON (it will be necesssary to read data)
+            localStorage.setItem(v_product, JSON.stringify(obj));
+			//console.log(obj);
+			$('#removeCart').removeClass('noShow');  //display the button to Remove from cart
+			$("#addCart").text("Update Cart");       //change the "add to cart" button to "update cart"
+          }
+          else
+          {
+             console.log("localStorage Not supported")
+          }
+		}
+	  });
+
+	  /*Function responsible to remove the product and quantity from the cart"*/
+	  $("#removeCart").click(function(){
+        //var v_product = $("#product_name").text();
+        var v_product = productName;
+		console.log('RemoveCart function');
+
+		//using localStorage - check if the brower is compatible
+      	if(window.localStorage)
+        {
+            console.log('localStorage supported!!!')
+
+			//product must be in the cart to be removed
+            let v_prd_read_local = localStorage.getItem(v_product);
+			if(v_prd_read_local){
+				localStorage.removeItem(v_product);   //remove item from Local Storage
+				getProductDetails(v_product);         //set the initial information for the product
+				$('#removeCart').addClass('noShow');  //hide the button "Remove from cart"
+				$("#addCart").text("Add to Cart");    //display the button "add to cart"
+			}
+        }
+        else
+        {
+             console.log("localStorage Not supported");
+        }
+	  });
+
+	});
+
+    </script>
+
+</body>
+
+</html>
